@@ -17,6 +17,12 @@ function nextImg({ dynamicAssetPrefix = false, ...nextConfig } = {}) {
   if (majorVersion >= 13) {
     return Object.assign({}, nextConfig, {
       webpack(config, options) {
+        nextConfig = Object.assign({
+          inlineImageLimit: 8192,
+          assetPrefix: "",
+          basePath: "",
+          fileExtensions: ["jpg", "jpeg", "png", "svg", "gif", "ico", "webp", "jp2", "avif"],
+        }, nextConfig);
         config.module.rules.push({
           test: new RegExp(`\\.(${nextConfig.fileExtensions.join('|')})$`),
           type: 'asset',
