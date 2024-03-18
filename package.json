@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hahazexia/next-img.git"
+    "url": "git+https://github.com/hahazexia/next-img-geq13"
   },
   "keywords": [
     "nextjs",
@@ -19,9 +19,9 @@
   "author": "hahazexia",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hahazexia/next-img/issues"
+    "url": "https://github.com/hahazexia/next-img-geq13/issues"
   },
-  "homepage": "https://github.com/hahazexia/next-img#readme",
+  "homepage": "https://github.com/hahazexia/next-img-geq13#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
