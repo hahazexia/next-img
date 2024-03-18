@@ -2,7 +2,7 @@ import path from 'path';
 import fs from 'fs';
 
 function nextImg({ dynamicAssetPrefix = false, ...nextConfig } = {}) {
-  const packageUrl = path.resolve(__dirname, './package.json');
+  const packageUrl = path.resolve(process.cwd(), './package.json');
   const packageStr = fs.readFileSync(packageUrl, 'utf-8');
   const packageObj = JSON.parse(packageStr);
 
