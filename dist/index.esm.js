@@ -25,7 +25,7 @@ function nextImg({ dynamicAssetPrefix = false, ...nextConfig } = {}) {
           test: new RegExp(`\\.(${nextConfig.fileExtensions.join('|')})$`),
           type: 'asset',
           generator: {
-            filename: `static/images/[name]-[hash].[ext]`,
+            filename: `static/images/[name]-[hash][ext]`,
           },
         });
         if (typeof nextConfig.webpack === 'function') {
