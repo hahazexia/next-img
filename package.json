@@ -1,6 +1,6 @@
 {
   "name": "next-img-geq13",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Import images in Next.js, support Next.js version 13.x 14.x",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
