@@ -11,7 +11,7 @@ function nextImg({ dynamicAssetPrefix = false, ...nextConfig } = {}) {
   if (!packageObj?.dependencies?.next) {
     throw new Error(`cannot find next in dependencies`);
   }
-  const majorVersion = nextVersion.match(/^[^/d]?(\d+)\.\d+\.\d+$/)[1];
+  const majorVersion = nextVersion.split('.')[0].replace(/[^\d]/g, '');
   if (majorVersion >= 13) {
     return Object.assign({}, nextConfig, {
       webpack(config, options) {
